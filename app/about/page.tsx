@@ -1,21 +1,17 @@
-import Link from "next/link";
 
-export default function Home() {
+export default function AboutPage() {
   return (
-    <main className="p-10">
-      <h1 className="text-3xl font-bold">
-        Hello, my name is Juliana Mira Requierme
+    <div className="max-w-3xl mx-auto px-6 py-12">
+      <h1 className="text-4xl font-bold mb-6">
+        About Me
       </h1>
 
-      <p className="mt-4">
-        I am an Information Technology student who enjoys learning
-        about technology and programming.
-        I want to improve my skills and become a successful developer.
+      <p className="text-lg text-gray-600 leading-relaxed">
+        Hello! My name is Juliana Mira Requierme. I am a student who
+        enjoys learning about javascript language.
+        I am passionate about improving my programming skills
+        and creating useful websites and applications.
       </p>
-
-      <Link href="/projects" className="text-blue-600 underline">
-        See my projects
-      </Link>
-    </main>
+    </div>
   );
 }

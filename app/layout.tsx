@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juliana Mira Requierme",
-  description: "Portfolio of Juliana Mira Requierme",
+  title: "Juliana Mira Requierme | Personal Site",
+  description: "A personal site built with Next.js",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -26,9 +26,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         <header className="site-header">
-          <Link href="/" className="brand">
-            Juliana
-          </Link>
           <nav className="nav-links" aria-label="Main navigation">
             <Link href="/">Home</Link>
             <Link href="/about">About</Link>

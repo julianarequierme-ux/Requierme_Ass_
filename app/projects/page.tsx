@@ -1,21 +1,52 @@
-import Link from "next/link";
 
-export default function Home() {
+export const metadata = {
+  title: "Projects | Juliana Mira Requierme",
+};
+
+const projects = [
+  {
+    id: 1,
+    name: "TripEase",
+    description:
+      "A travel management website that helps users organize their trips.",
+  },
+  {
+    id: 2,
+    name: "Senior Citizen Management System",
+    description:
+      "A system designed to manage senior citizen information and assistance requests.",
+  },
+  {
+    id: 3,
+    name: "Personal Portfolio Website",
+    description:
+      "A personal website showcasing my information, skills, and projects.",
+  },
+];
+
+export default function ProjectsPage() {
   return (
-    <main className="p-10">
-      <h1 className="text-3xl font-bold">
-        Hello, my name is Juliana Mira Requierme
+    <div className="max-w-4xl mx-auto px-6 py-12">
+      <h1 className="text-4xl font-bold mb-8">
+        My Projects
       </h1>
 
-      <p className="mt-4">
-        I am an Information Technology student who enjoys learning
-        about technology and programming.
-        I want to improve my skills and become a successful developer.
-      </p>
+      <div className="grid gap-6">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="p-6 border rounded-xl shadow-sm hover:shadow-md transition"
+          >
+            <h2 className="text-2xl font-semibold mb-2">
+              {project.name}
+            </h2>
 
-      <Link href="/projects" className="text-blue-600 underline">
-        See my projects
-      </Link>
-    </main>
+            <p className="text-gray-600">
+              {project.description}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

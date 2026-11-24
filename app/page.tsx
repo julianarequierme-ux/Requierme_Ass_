@@ -9,10 +9,8 @@ export default function Home() {
       </h1>
 
       <p className="text-lg text-gray-600 leading-relaxed mb-8">
-        Welcome to my personal website! I am a student
-        interested in programming, web development, and
-        modern technologies. I enjoy creating projects
-        and learning new skills to improve my knowledge.
+      Welcome to my personal website! I am a student who loves learning about technology and programming. 
+      I enjoy creating projects and learning new things.
       </p>
 
       <Link
